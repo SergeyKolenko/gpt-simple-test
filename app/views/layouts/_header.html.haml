@@ -1,0 +1,15 @@
+%header.bg-lime-600.sticky.top-0.px-3.py-5.text-white
+  .flex.items-center.justify-between
+    .flex
+      = link_to 'Home', root_path, class: 'text-xl font-semibold'
+
+      %nav.inline-flex.items-center.space-x-3.pl-5
+        = link_to 'Link 1', '#'
+        = link_to 'Link 2', '#'
+    
+    .inline-flex.items-center.space-x-3
+      = heroicon 'user-circle', options: { class: 'w-8' }
+      - if current_user
+        = link_to current_user.name, edit_user_registration_path, class: 'text-nowrap'
+      - else
+        = link_to 'Sign in', new_user_session_path, class: 'text-nowrap'

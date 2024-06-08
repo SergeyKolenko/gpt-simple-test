@@ -141,6 +141,8 @@ GEM
       activesupport (>= 5.1)
       haml (>= 4.0.6)
       railties (>= 5.1)
+    heroicon (1.0.0)
+      rails (>= 5.2)
     html2haml (2.3.0)
       erubis (~> 2.7.0)
       haml (>= 4.0)
@@ -408,6 +410,7 @@ DEPENDENCIES
   devise
   factory_bot
   haml-rails
+  heroicon
   html2haml
   image_processing
   importmap-rails

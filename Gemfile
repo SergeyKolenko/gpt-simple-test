@@ -10,6 +10,7 @@ gem 'after_party'
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'haml-rails'
+gem 'heroicon'
 gem 'image_processing'
 gem 'importmap-rails'
 gem 'jb'

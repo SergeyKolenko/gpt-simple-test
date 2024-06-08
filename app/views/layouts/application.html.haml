@@ -9,5 +9,10 @@
     = stylesheet_link_tag 'tailwind', 'inter-font', 'data-turbo-track': 'reload'
     = stylesheet_link_tag 'application', 'data-turbo-track': 'reload'
   %body
-    .flex.w-full
-      = yield
+    .flex.flex-col.w-full
+      = render 'layouts/header'
+
+      .flex.h-full
+        = yield
+
+      -# = render 'layouts/footer'
